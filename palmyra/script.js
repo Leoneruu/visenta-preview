@@ -65,34 +65,46 @@
     dateInput.max = fmtDate(maxDate);
   }
 
+  // Opening hours per weekday (0 = Sunday, 1 = Monday, ... 6 = Saturday)
+  // Each entry: [openHour, openMinute, lastSlotHour, lastSlotMinute]
+  const hours = {
+    0: [12, 0, 21, 0],   // Sonntag 12:00–21:00
+    1: [11, 30, 21, 30], // Montag
+    2: [11, 30, 21, 30], // Dienstag
+    3: [11, 30, 21, 30], // Mittwoch
+    4: [11, 30, 21, 30], // Donnerstag
+    5: [11, 30, 21, 30], // Freitag
+    6: [11, 30, 21, 30], // Samstag
+  };
+
   const buildTimes = (selectedDateStr) => {
     if (!timeSelect) return;
     const current = timeSelect.value;
     timeSelect.innerHTML = '<option value="" disabled selected>Bitte wählen</option>';
 
-    const slots = [];
-    for (let h = 11; h <= 21; h++) {
-      slots.push(`${pad(h)}:30`);
-      if (h < 21) slots.push(`${pad(h + 1)}:00`);
-    }
-    const unique = [...new Set(slots)].sort();
-
-    let dayOfWeek = -1;
+    let dayOfWeek = 1;
     if (selectedDateStr) {
       const d = new Date(selectedDateStr + 'T00:00:00');
       dayOfWeek = d.getDay();
     }
 
-    unique.forEach((slot) => {
+    const [oh, om, ch, cm] = hours[dayOfWeek];
+    const slots = [];
+    let h = oh, m = om;
+    while (h < ch || (h === ch && m <= cm)) {
+      slots.push(`${pad(h)}:${pad(m)}`);
+      m += 30;
+      if (m >= 60) { m -= 60; h += 1; }
+    }
+
+    slots.forEach((slot) => {
       const opt = document.createElement('option');
       opt.value = slot;
       opt.textContent = slot + ' Uhr';
-      // Sunday closed
-      if (dayOfWeek === 0) opt.disabled = true;
       timeSelect.appendChild(opt);
     });
 
-    if (current && timeSelect.querySelector(`option[value="${current}"]:not([disabled])`)) {
+    if (current && timeSelect.querySelector(`option[value="${current}"]`)) {
       timeSelect.value = current;
     }
   };
