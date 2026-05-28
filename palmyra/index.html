@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Palmyra Syrian Food – Vegane und vegetarische syrische Küche im Herzen von Göttingen.">
+<title>Palmyra – Syrian Food | Göttingen</title>
+<link rel="icon" href="assets/logo.jpg" type="image/jpeg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#hero" class="brand">
+      <img src="assets/logo.jpg" alt="Palmyra Logo" width="44" height="44">
+      <span>Palmyra</span>
+    </a>
+    <nav class="nav-links" aria-label="Hauptnavigation">
+      <a href="#speisekarte">Speisekarte</a>
+      <a href="#info">Restaurant</a>
+      <a href="#reservierung">Reservierung</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+    <a href="#reservierung" class="nav-cta">Tisch reservieren</a>
+    <button class="nav-burger" id="navBurger" aria-label="Menü öffnen" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<section class="hero" id="hero">
+  <div class="hero-bg" aria-hidden="true">
+    <img src="assets/hero.png" alt="" loading="eager" fetchpriority="high">
+    <div class="hero-overlay"></div>
+  </div>
+  <div class="hero-content reveal">
+    <div class="kicker">Syrian Food · Göttingen</div>
+    <h1>Orient auf dem<br><em>Teller.</em></h1>
+    <p class="tagline">Vegane und vegetarische Spezialitäten aus Syrien – mit Liebe gekocht, mit Herz serviert.</p>
+    <div class="hero-actions">
+      <a href="#reservierung" class="btn btn-primary">Tisch reservieren</a>
+      <a href="#speisekarte" class="btn btn-ghost">Zur Speisekarte</a>
+    </div>
+  </div>
+  <a href="#speisekarte" class="hero-scroll" aria-label="Nach unten scrollen">
+    <span></span>
+  </a>
+</section>
+
+<section class="speisekarte" id="speisekarte">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="kicker dark">Unsere Karte</div>
+      <h2>Speise<em>karte</em></h2>
+      <p class="lead">Frische Zutaten, traditionelle Rezepte, neu interpretiert – komplett vegan und vegetarisch.</p>
+    </div>
+
+    <div class="menu-grid">
+      <article class="menu-card reveal">
+        <div class="menu-card-img">
+          <img src="assets/hero.png" alt="Mezze-Auswahl im Palmyra" loading="lazy">
+        </div>
+        <div class="menu-card-body">
+          <h3>Mezze &amp; Tellergerichte</h3>
+          <p>Falafel, Halloumi, Hummus, Baba Ghanoush und viele weitere syrische Klassiker.</p>
+        </div>
+      </article>
+      <article class="menu-card reveal">
+        <div class="menu-card-img">
+          <img src="assets/bowl.png" alt="Vegane Bowl mit Granatapfel" loading="lazy">
+        </div>
+        <div class="menu-card-body">
+          <h3>Bowls &amp; Salate</h3>
+          <p>Bunte Bowls mit Quinoa, Couscous, Linsen und Granatapfel – nahrhaft und frisch.</p>
+        </div>
+      </article>
+      <article class="menu-card reveal">
+        <div class="menu-card-img">
+          <img src="assets/dessert.png" alt="Hausgemachter Kuchen mit arabischem Kaffee" loading="lazy">
+        </div>
+        <div class="menu-card-body">
+          <h3>Dessert &amp; Kaffee</h3>
+          <p>Hausgemachte Kuchen, orientalischer Mokka und Tee – der süße Abschluss.</p>
+        </div>
+      </article>
+    </div>
+
+    <div class="speisekarte-cta reveal">
+      <a href="speisekarte_4.html" class="btn btn-primary">Gesamte Speisekarte ansehen</a>
+    </div>
+  </div>
+</section>
+
+<section class="info" id="info">
+  <div class="container info-grid">
+    <div class="info-image reveal">
+      <img src="assets/eingang.png" alt="Eingang des Palmyra Restaurants in Göttingen" loading="lazy">
+    </div>
+    <div class="info-text reveal">
+      <div class="kicker dark">Über uns</div>
+      <h2>Ein Stück Syrien in <em>Göttingen.</em></h2>
+      <p>Mitten in der Düsteren Straße empfängt Sie das Palmyra mit warmer Atmosphäre, ehrlicher Küche und der Gastfreundschaft, für die Syrien bekannt ist. Bei uns finden Sie ausschließlich vegane und vegetarische Gerichte – kreativ, traditionell und mit besten Zutaten zubereitet.</p>
+
+      <div class="info-list">
+        <div class="info-row">
+          <span class="info-label">Adresse</span>
+          <span>Düstere Straße 10, 37073 Göttingen</span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">Öffnungszeiten</span>
+          <span>Mo – Sa · 11:30 – 22:00<br>So · Ruhetag</span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">Küche</span>
+          <span>Syrisch · 100 % vegan &amp; vegetarisch</span>
+        </div>
+      </div>
+
+      <a href="#reservierung" class="btn btn-primary">Jetzt reservieren</a>
+    </div>
+  </div>
+</section>
+
+<section class="reservierung" id="reservierung">
+  <div class="reservierung-bg" aria-hidden="true">
+    <img src="assets/hero.png" alt="" loading="lazy">
+    <div class="reservierung-overlay"></div>
+  </div>
+  <div class="container">
+    <div class="section-head light reveal">
+      <div class="kicker">Reservierung</div>
+      <h2>Ihren Tisch <em>sichern.</em></h2>
+      <p class="lead">Wählen Sie Datum, Uhrzeit und Personenanzahl – wir bestätigen Ihre Reservierung in Kürze.</p>
+    </div>
+
+    <form class="reservierung-form glass reveal" id="reservierungForm" novalidate>
+      <div class="form-grid">
+        <div class="field">
+          <label for="resName">Name</label>
+          <input type="text" id="resName" name="name" autocomplete="name" required>
+        </div>
+        <div class="field">
+          <label for="resEmail">E-Mail</label>
+          <input type="email" id="resEmail" name="email" autocomplete="email" required>
+        </div>
+        <div class="field">
+          <label for="resPhone">Telefon</label>
+          <input type="tel" id="resPhone" name="phone" autocomplete="tel">
+        </div>
+        <div class="field">
+          <label for="resGuests">Personen</label>
+          <select id="resGuests" name="guests" required>
+            <option value="1">1 Person</option>
+            <option value="2" selected>2 Personen</option>
+            <option value="3">3 Personen</option>
+            <option value="4">4 Personen</option>
+            <option value="5">5 Personen</option>
+            <option value="6">6 Personen</option>
+            <option value="7">7+ Personen</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="resDate">Datum</label>
+          <input type="date" id="resDate" name="date" required>
+        </div>
+        <div class="field">
+          <label for="resTime">Uhrzeit</label>
+          <select id="resTime" name="time" required>
+            <option value="" disabled selected>Bitte wählen</option>
+          </select>
+        </div>
+        <div class="field field-full">
+          <label for="resNotes">Anmerkungen (optional)</label>
+          <textarea id="resNotes" name="notes" rows="3" placeholder="Allergien, besondere Wünsche …"></textarea>
+        </div>
+      </div>
+
+      <button type="submit" class="btn btn-primary btn-block">Reservierung anfragen</button>
+      <p class="form-success" id="formSuccess" hidden>Vielen Dank! Wir haben Ihre Anfrage erhalten und melden uns in Kürze.</p>
+    </form>
+  </div>
+</section>
+
+<footer class="footer" id="kontakt">
+  <div class="container footer-grid">
+    <div class="footer-col">
+      <a href="#hero" class="brand brand-light">
+        <img src="assets/logo.jpg" alt="Palmyra Logo" width="48" height="48" loading="lazy">
+        <span>Palmyra</span>
+      </a>
+      <p class="footer-tag">Syrian Food · Vegan &amp; Vegetarisch · Göttingen</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Kontakt</h4>
+      <address>
+        Palmyra Syrian Food<br>
+        Düstere Straße 10<br>
+        37073 Göttingen
+      </address>
+      <p><a href="mailto:info@palmyra-goettingen.de">info@palmyra-goettingen.de</a></p>
+      <p>Fax · 0800 202 07 702</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Öffnungszeiten</h4>
+      <p>Mo – Sa · 11:30 – 22:00<br>So · Ruhetag</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Rechtliches</h4>
+      <ul>
+        <li><a href="#impressum" id="openImpressum">Impressum</a></li>
+        <li><a href="#datenschutz" id="openDatenschutz">Datenschutz</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; <span id="year"></span> Palmyra Syrian Food · Alle Rechte vorbehalten</p>
+  </div>
+</footer>
+
+<div class="modal" id="modal" hidden>
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="modal-close" data-close aria-label="Schließen">×</button>
+    <h3 id="modalTitle"></h3>
+    <div class="modal-body" id="modalBody"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
