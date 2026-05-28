@@ -475,6 +475,10 @@ button { font: inherit; cursor: pointer; border: 0; background: none; color: inh
   background: rgba(255, 255, 255, 0.14);
 }
 .field select option { color: var(--ink); background: #fff; }
+.field input[type="date"] {
+  max-width: 100%;
+  min-width: 0;
+}
 .field input[type="date"]::-webkit-calendar-picker-indicator {
   filter: invert(1) brightness(1.2);
   cursor: pointer;
