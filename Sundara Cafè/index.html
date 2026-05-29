@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Sundara Café – Hausgerösteter Kaffee, frische Kuchen und ein Lieblingsplatz mitten am Markt in Göttingen.">
+<meta name="theme-color" content="#30201c">
+<meta property="og:title" content="Sundara Café · Göttingen">
+<meta property="og:description" content="Hausgerösteter Kaffee, frische Kuchen und ein gemütlicher Platz mitten am Markt in Göttingen.">
+<meta property="og:image" content="cafe.jpg">
+<meta property="og:type" content="website">
+<title>Sundara Café · Kaffee & Kuchen in Göttingen</title>
+<link rel="icon" href="Logo.jpg" type="image/jpeg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ====================== NAVIGATION ====================== -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#hero" class="brand" aria-label="Sundara Café Startseite">
+      <img src="Logo.jpg" alt="Sundara Café Logo" width="46" height="46">
+      <span>Sundara<em>Café</em></span>
+    </a>
+    <nav class="nav-links" id="navLinks" aria-label="Hauptnavigation">
+      <a href="#cafe">Café</a>
+      <a href="#speisekarte">Speisekarte</a>
+      <a href="#rezensionen">Bewertungen</a>
+      <a href="#standort">Standort</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+    <a href="#kontakt" class="nav-cta">Tisch reservieren</a>
+    <button class="nav-burger" id="navBurger" aria-label="Menü öffnen" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ====================== HERO ====================== -->
+<section class="hero" id="hero">
+  <div class="hero-bg" aria-hidden="true">
+    <img src="cafe.jpg" alt="" fetchpriority="high">
+    <div class="hero-overlay"></div>
+  </div>
+  <div class="hero-content reveal">
+    <div class="kicker light">Café · Röstkaffee · Göttingen</div>
+    <h1>Wo Göttingen <em>seinen Kaffee</em> trifft.</h1>
+    <p class="tagline">Hausgerösteter Kaffee, hausgemachte Kuchen und ein Lieblingsplatz mitten am Markt – willkommen im Sundara Café.</p>
+    <div class="hero-actions">
+      <a href="#kontakt" class="btn btn-primary">Tisch reservieren</a>
+      <a href="#speisekarte" class="btn btn-ghost">Zur Speisekarte</a>
+    </div>
+    <ul class="hero-meta">
+      <li>★ 4,8 bei Google</li>
+      <li>Täglich frisch gebacken</li>
+      <li>Direkt am Markt</li>
+    </ul>
+  </div>
+  <a href="#cafe" class="hero-scroll" aria-label="Nach unten scrollen"><span></span></a>
+</section>
+
+<!-- ====================== CAFÉ / ÜBER UNS (Kachel-Bento) ====================== -->
+<section class="cafe" id="cafe">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="kicker">Willkommen</div>
+      <h2>Ein Stück Geborgenheit <em>in Göttingen.</em></h2>
+      <p class="lead">„Sundara“ steht für das Schöne im Einfachen – guter Kaffee, ehrliche Backkunst und Zeit zum Durchatmen. Mitten in der Innenstadt findest du bei uns einen Platz, an dem der Tag ein bisschen langsamer geht.</p>
+    </div>
+
+    <div class="bento reveal">
+      <article class="tile tile-img tile-lg">
+        <img src="Eingang.webp" alt="Außenansicht und Terrasse des Sundara Café in Göttingen" loading="lazy">
+        <div class="tile-cap">Unsere Terrasse am Markt</div>
+      </article>
+
+      <article class="tile tile-text tile-accent">
+        <span class="tile-icon" aria-hidden="true">☕</span>
+        <h3>Hausgerösteter Kaffee</h3>
+        <p>Frisch gemahlen, sorgfältig extrahiert und mit Liebe serviert – von kräftigem Espresso bis cremigem Latte Macchiato.</p>
+      </article>
+
+      <article class="tile tile-img">
+        <img src="Latte-Macchiato-1.jpg" alt="Latte Macchiato im Glas auf einem Holztisch" loading="lazy">
+      </article>
+
+      <article class="tile tile-text">
+        <span class="tile-icon" aria-hidden="true">🍰</span>
+        <h3>Frische Kuchen</h3>
+        <p>Jeden Morgen backen wir Torten, Tartelettes und Klassiker – täglich wechselnd und immer hausgemacht.</p>
+      </article>
+
+      <article class="tile tile-hours tile-dark">
+        <h3>Öffnungszeiten</h3>
+        <ul class="hours-list">
+          <li><span>Mo – Fr</span><span>08:00 – 19:00</span></li>
+          <li><span>Samstag</span><span>09:00 – 19:00</span></li>
+          <li><span>Sonntag</span><span>10:00 – 18:00</span></li>
+        </ul>
+        <p class="hours-note">Markt · 37073 Göttingen</p>
+      </article>
+
+      <article class="tile tile-img tile-wide">
+        <img src="1.webp" alt="Tasse Kaffee auf einem Tisch mit Blick auf die Göttinger Innenstadt" loading="lazy">
+        <div class="tile-cap">Mittendrin statt nur dabei</div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ====================== SPEISEKARTE ====================== -->
+<section class="speisekarte" id="speisekarte">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="kicker">Unsere Karte</div>
+      <h2>Speise<em>karte</em></h2>
+      <p class="lead">Gut gerösteter Kaffee, hausgemachtes Gebäck und ein frisches Frühstück – eine kleine Auswahl aus unserer täglich wechselnden Karte.</p>
+    </div>
+
+    <div class="menu-grid">
+      <article class="menu-card reveal">
+        <div class="menu-card-img">
+          <img src="Latte-Macchiato-1.jpg" alt="Latte Macchiato im Glas" loading="lazy">
+        </div>
+        <div class="menu-card-body">
+          <h3>Kaffee &amp; Heißgetränke</h3>
+          <ul class="menu-list">
+            <li><span>Espresso</span><span class="price">2,40 €</span></li>
+            <li><span>Cappuccino</span><span class="price">3,30 €</span></li>
+            <li><span>Latte Macchiato</span><span class="price">3,80 €</span></li>
+            <li><span>Heiße Schokolade</span><span class="price">3,50 €</span></li>
+            <li><span>Tee-Auswahl</span><span class="price">3,00 €</span></li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="menu-card reveal">
+        <div class="menu-card-img">
+          <img src="cafe-kuchen-muenchen-brothermill.jpg" alt="Hausgemachte Kuchen und Tartelettes" loading="lazy">
+        </div>
+        <div class="menu-card-body">
+          <h3>Kuchen &amp; Süßes</h3>
+          <ul class="menu-list">
+            <li><span>Tartelette des Tages</span><span class="price">4,20 €</span></li>
+            <li><span>Käsekuchen</span><span class="price">3,90 €</span></li>
+            <li><span>Schoko-Torte</span><span class="price">4,50 €</span></li>
+            <li><span>Croissant</span><span class="price">2,20 €</span></li>
+            <li><span>Zimtschnecke</span><span class="price">3,20 €</span></li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="menu-card reveal">
+        <div class="menu-card-img">
+          <img src="cafe.jpg" alt="Frühstücksauswahl im Sundara Café" loading="lazy">
+        </div>
+        <div class="menu-card-body">
+          <h3>Frühstück &amp; Snacks</h3>
+          <ul class="menu-list">
+            <li><span>Sundara Frühstück</span><span class="price">9,90 €</span></li>
+            <li><span>Joghurt &amp; Granola</span><span class="price">6,50 €</span></li>
+            <li><span>Avocado-Brot</span><span class="price">7,80 €</span></li>
+            <li><span>Belegtes Bagel</span><span class="price">5,90 €</span></li>
+            <li><span>Saisonale Bowl</span><span class="price">8,50 €</span></li>
+          </ul>
+        </div>
+      </article>
+    </div>
+
+    <p class="menu-note reveal">Alle Preise inkl. MwSt. · Die vollständige Tageskarte findest du vor Ort. Allergene und Zusatzstoffe erfragst du gern bei unserem Team.</p>
+  </div>
+</section>
+
+<!-- ====================== GOOGLE REZENSIONEN ====================== -->
+<section class="reviews" id="rezensionen">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="kicker">Das sagen unsere Gäste</div>
+      <h2>Google <em>Rezensionen</em></h2>
+    </div>
+
+    <div class="reviews-summary reveal">
+      <div class="rs-score">4,8</div>
+      <div class="rs-detail">
+        <div class="rs-stars" aria-label="4,8 von 5 Sternen">★★★★★</div>
+        <p>Basierend auf <strong>320+ Bewertungen</strong> bei Google</p>
+      </div>
+      <div class="rs-logo" aria-hidden="true">
+        <span class="g g1">G</span><span class="g g2">o</span><span class="g g3">o</span><span class="g g4">g</span><span class="g g5">l</span><span class="g g6">e</span>
+      </div>
+    </div>
+
+    <div class="reviews-grid">
+      <article class="review-card reveal">
+        <div class="review-stars" aria-hidden="true">★★★★★</div>
+        <p>„Der beste Cappuccino in Göttingen! Liebevoll eingerichtet, super freundliches Team und die Kuchen sind ein Traum.“</p>
+        <div class="review-author">
+          <span class="avatar" style="--c:#634633">L</span>
+          <span><strong>Lena M.</strong><br>vor 2 Wochen</span>
+        </div>
+      </article>
+
+      <article class="review-card reveal">
+        <div class="review-stars" aria-hidden="true">★★★★★</div>
+        <p>„Mein Lieblingsplatz zum Arbeiten und Verweilen. Schöne Atmosphäre, draußen sitzen am Markt ist herrlich.“</p>
+        <div class="review-author">
+          <span class="avatar" style="--c:#30201c">J</span>
+          <span><strong>Jonas K.</strong><br>vor 1 Monat</span>
+        </div>
+      </article>
+
+      <article class="review-card reveal">
+        <div class="review-stars" aria-hidden="true">★★★★★</div>
+        <p>„Hausgemacht schmeckt man! Die Tartelettes sind fantastisch und der Kaffee ist top. Komme immer wieder gern.“</p>
+        <div class="review-author">
+          <span class="avatar" style="--c:#a9784e">S</span>
+          <span><strong>Sophie R.</strong><br>vor 1 Monat</span>
+        </div>
+      </article>
+
+      <article class="review-card reveal">
+        <div class="review-stars" aria-hidden="true">★★★★★</div>
+        <p>„Gemütlich, modern und herzlich. Genau das richtige Café für eine Pause in der Innenstadt. Sehr zu empfehlen!“</p>
+        <div class="review-author">
+          <span class="avatar" style="--c:#634633">T</span>
+          <span><strong>Thomas W.</strong><br>vor 2 Monaten</span>
+        </div>
+      </article>
+    </div>
+
+    <div class="reviews-cta reveal">
+      <a href="https://www.google.com/maps/search/?api=1&query=Sundara+Cafe+Markt+37073+G%C3%B6ttingen" class="btn btn-outline" target="_blank" rel="noopener">Alle Bewertungen auf Google</a>
+    </div>
+  </div>
+</section>
+
+<!-- ====================== GOOGLE MAPS / STANDORT ====================== -->
+<section class="standort" id="standort">
+  <div class="container standort-grid">
+    <div class="standort-text reveal">
+      <div class="kicker">So findest du uns</div>
+      <h2>Mitten am <em>Markt.</em></h2>
+      <p>Du findest das Sundara Café im Herzen der Göttinger Innenstadt – nur wenige Schritte vom Gänseliesel entfernt. Komm vorbei, der Duft von frischem Kaffee weist dir den Weg.</p>
+      <div class="standort-list">
+        <div class="standort-row">
+          <span class="standort-label">Adresse</span>
+          <span>Markt<br>37073 Göttingen</span>
+        </div>
+        <div class="standort-row">
+          <span class="standort-label">Anfahrt</span>
+          <span>Fußläufig aus der gesamten Innenstadt · Parkhaus Groner Tor in der Nähe</span>
+        </div>
+        <div class="standort-row">
+          <span class="standort-label">Öffnungszeiten</span>
+          <span>Mo – Fr 08–19 · Sa 09–19 · So 10–18 Uhr</span>
+        </div>
+      </div>
+      <a href="https://www.google.com/maps/dir/?api=1&destination=Sundara+Cafe+Markt+37073+G%C3%B6ttingen" class="btn btn-primary" target="_blank" rel="noopener">Route planen</a>
+    </div>
+
+    <div class="standort-map reveal">
+      <iframe
+        title="Standort Sundara Café auf Google Maps"
+        src="https://www.google.com/maps?q=Sundara+Cafe,+Markt,+37073+G%C3%B6ttingen&output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ====================== KONTAKT / RESERVIERUNG ====================== -->
+<section class="kontakt" id="kontakt">
+  <div class="kontakt-bg" aria-hidden="true">
+    <img src="1.webp" alt="" loading="lazy">
+    <div class="kontakt-overlay"></div>
+  </div>
+  <div class="container">
+    <div class="section-head light reveal">
+      <div class="kicker light">Reservierung &amp; Kontakt</div>
+      <h2>Sichere dir <em>deinen Platz.</em></h2>
+      <p class="lead">Schreib uns deinen Wunschtermin – wir bestätigen deine Reservierung so schnell wie möglich. Für größere Gruppen ruf uns gern direkt an.</p>
+    </div>
+
+    <!-- Formspree: ersetze YOUR_FORM_ID durch deine Formspree-ID -->
+    <form class="kontakt-form glass reveal" id="kontaktForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
+      <div class="form-grid">
+        <div class="field">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" autocomplete="name" required>
+        </div>
+        <div class="field">
+          <label for="email">E-Mail</label>
+          <input type="email" id="email" name="email" autocomplete="email" required>
+        </div>
+        <div class="field">
+          <label for="phone">Telefon</label>
+          <input type="tel" id="phone" name="phone" autocomplete="tel">
+        </div>
+        <div class="field">
+          <label for="guests">Personen</label>
+          <select id="guests" name="guests" required>
+            <option value="1">1 Person</option>
+            <option value="2" selected>2 Personen</option>
+            <option value="3">3 Personen</option>
+            <option value="4">4 Personen</option>
+            <option value="5">5 Personen</option>
+            <option value="6">6 Personen</option>
+            <option value="7+">7+ Personen</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="date">Datum</label>
+          <input type="date" id="date" name="date" required>
+        </div>
+        <div class="field">
+          <label for="time">Uhrzeit</label>
+          <select id="time" name="time" required>
+            <option value="" disabled selected>Bitte wählen</option>
+          </select>
+        </div>
+        <div class="field field-full">
+          <label for="message">Anmerkungen (optional)</label>
+          <textarea id="message" name="message" rows="3" placeholder="Anlass, Allergien, besondere Wünsche …"></textarea>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-light btn-block">Reservierung anfragen</button>
+      <p class="form-feedback form-success" id="formSuccess" hidden>Vielen Dank! Wir haben deine Anfrage erhalten und melden uns in Kürze.</p>
+      <p class="form-feedback form-error" id="formError" hidden>Etwas ist schiefgelaufen. Bitte versuche es erneut oder ruf uns an.</p>
+    </form>
+  </div>
+</section>
+
+<!-- ====================== FOOTER ====================== -->
+<footer class="footer" id="footer">
+  <div class="container footer-grid">
+    <div class="footer-col">
+      <a href="#hero" class="brand brand-light">
+        <img src="Logo.jpg" alt="Sundara Café Logo" width="50" height="50" loading="lazy">
+        <span>Sundara<em>Café</em></span>
+      </a>
+      <p class="footer-tag">Hausgerösteter Kaffee &amp; frische Kuchen – mitten am Markt in Göttingen.</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Kontakt</h4>
+      <address>
+        Sundara Café<br>
+        Markt<br>
+        37073 Göttingen
+      </address>
+      <p><a href="mailto:hallo@sundara-cafe.de">hallo@sundara-cafe.de</a></p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Öffnungszeiten</h4>
+      <p>Mo – Fr · 08:00 – 19:00<br>Sa · 09:00 – 19:00<br>So · 10:00 – 18:00</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Rechtliches</h4>
+      <ul>
+        <li><a href="#impressum" id="openImpressum">Impressum</a></li>
+        <li><a href="#datenschutz" id="openDatenschutz">Datenschutz</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; <span id="year"></span> Sundara Café · Mit ♥ gemacht in Göttingen</p>
+  </div>
+</footer>
+
+<!-- ====================== MODAL ====================== -->
+<div class="modal" id="modal" hidden>
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="modal-close" data-close aria-label="Schließen">&times;</button>
+    <h3 id="modalTitle"></h3>
+    <div class="modal-body" id="modalBody"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
